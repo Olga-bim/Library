@@ -13,18 +13,19 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <h1>List loans</h1>
-    <a href="{{ url_for('add_loan') }}">Add loan</a>
+    <a href="https://library-gldl.onrender.com/add_loan">Add loan</a>
     <ul>
         {% for loan in loans %}
         <li>
-            Customer ID: {{ loan.cust_id }}, Book ID: {{ loan.book_id }} -
-            <a href="{{ url_for('edit_loan', id=loan.id) }}">Edit</a>
-            <form action="{{ url_for('delete_loan', id=loan.id) }}" method="POST" style="display:inline;">
+            Customer ID: {{ loan.cust_id }}, Book ID: {{ loan.book_id }} - 
+            <a href="https://library-gldl.onrender.com/edit_loan/{{ loan.id }}">Edit</a>
+            <form action="https://library-gldl.onrender.com/delete_loan/{{ loan.id }}" method="POST" style="display:inline;">
                 <button type="submit">Delete</button>
             </form>
         </li>
         {% endfor %}
     </ul>
 </body>
+
 
 </html>
