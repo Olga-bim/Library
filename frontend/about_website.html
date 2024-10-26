@@ -19,9 +19,12 @@
                 based on the following requirements:</p>
             <ul>
                 <li>Create a SQLite database with three tables: <strong>Books</strong>, <strong>Customers</strong>, and
-                    <strong>Loans</strong>.</li>
+                    <strong>Loans</strong>.
+                </li>
                 <li>Define the book type to set the maximum loan time for each book using an Enum: 1 (up to 10 days), 2
                     (up to 5 days), and 3 (up to 2 days).</li>
+                <li>Define the customer type using an Enum: 1 (Authors), 2 (Readers).</li>
+
                 <li>Utilize SQLAlchemy to build classes for each entity, organize the code into separate modules, and
                     create unit tests.</li>
                 <li>Develop a client application that allows users to manage their book loans.</li>
@@ -33,15 +36,18 @@
     <div class="card mb-4">
         <div class="card-body">
             <h5 class="card-title">How the Website Works</h5>
-            <p class="card-text">The library is designed for readers who can browse a list of available books, add them
-                to their cart, and view the details of their selected loans. Additionally, authors can publish their
-                books and offer them for reading. Site administrators have access to information about all customers and
-                can monitor books currently on loan, ensuring timely returns.</p>
+            <p class="card-text">The library is designed for:
+
+                Authors who can publish their books and offer them for reading to other users of the site.
+                Readers who can browse a list of available books (with plans to add a personal cart for selected books
+                in development).
+                Site administrators who have access to information about all customers and books, as well as the ability
+                to manage the list of loans.</p>
         </div>
     </div>
 
     <div class="text-center">
-        <a href="https://olga-bim.github.io/Library/" class="btn btn-primary" target="_blank">View on GitHub</a>
+        <a href="https://github.com/Olga-bim/Library.git" class="btn btn-primary" target="_blank">View on GitHub</a>
         <a href="https://library-gldl.onrender.com" class="btn btn-success" target="_blank">Visit Live Site</a>
     </div>
 
