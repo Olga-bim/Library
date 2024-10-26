@@ -496,4 +496,4 @@ if __name__ == '__main__':
     with app.app_context():
         create_tables()  
         create_initial_data()  
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5000)))
