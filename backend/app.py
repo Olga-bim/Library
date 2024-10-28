@@ -11,12 +11,11 @@ from loan import Loan, LoanType
 import os
 
 
-# Установите путь к шаблонам
-template_folder_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'Library_frontend', 'frontend')
+# Определяем путь к папке frontend
+template_folder_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'frontend')
 app = Flask(__name__, template_folder=template_folder_path)
 
-print(template_folder_path)  # Проверка пути
-
+print(template_folder_path)  # Вывод пути для проверки
 
 import unittest
 
